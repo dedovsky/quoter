@@ -1,0 +1,8 @@
+services:
+  quoter:
+    build:
+      context: ../src
+      dockerfile: ../docker/Dockerfile
+    container_name: quoter
+    ports:
+      - "8080:8080"
